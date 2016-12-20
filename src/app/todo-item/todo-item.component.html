@@ -1,0 +1,2 @@
+<span *ngIf="editable === false" (click)="startEdit()">{{data.title}}</span>
+<input *ngIf="editable === true" [(ngModel)]="data.title" (keyUp)="endEdit($event)"/>
